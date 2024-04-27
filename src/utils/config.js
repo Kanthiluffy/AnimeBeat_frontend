@@ -1,1 +1,1 @@
-export const backendUrl = "https://anime-beat.vercel.app";
+export const backendUrl = "https://animebeat.onrender.com";
