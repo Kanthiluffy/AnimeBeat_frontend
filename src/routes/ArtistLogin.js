@@ -30,7 +30,9 @@ const Login = () => {
             alert("Failure");
         }
     };
-
+    const redirectToArtistLogin = () => {
+        navigate("/login");
+    };
     return (
         <div className="flex w-full h-screen" style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className="logo flex items-center justify-center w-1/3">
@@ -70,6 +72,14 @@ const Login = () => {
                     <div className="flex item-center justify-center semi-bold text-xl">Don't have an account?</div>
                     <div className="border border-solid border-gray-400 text-gray-500 rounded-full flex justify-center py-2 font-bold">
                         <Link to="/artistsignup">SIGN UP FOR SPOTIFY</Link>
+                    </div>
+                    <div className="mt-4">
+                        <button
+                            className="bg-blue-500 text-white font-semibold p-3 px-10 rounded-full"
+                            onClick={redirectToArtistLogin}
+                        >
+                            USER LOGIN
+                        </button>
                     </div>
                 </div>
             </div>
